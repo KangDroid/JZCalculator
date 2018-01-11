@@ -39,7 +39,7 @@ public class Main extends JFrame {
 			double scoreString = Double.parseDouble(score.getText());
 			double deviationString = Double.parseDouble(deviation.getText());
 			double n = (scoreString-averageString)/deviationString;
-			JOptionPane.showMessageDialog(this, n, null, JOptionPane.PLAIN_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Your Z score is:" + n, null, JOptionPane.PLAIN_MESSAGE);
 		} else {
 			JOptionPane.showMessageDialog(this, "One or more field is empty. please fill it in.", "Error", JOptionPane.ERROR_MESSAGE);
 		}
